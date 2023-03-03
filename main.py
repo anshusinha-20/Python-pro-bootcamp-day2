@@ -33,11 +33,17 @@
 ################################
 
 # Day 2 Project: Tip calculator
-
+"""prints the initial game text"""
 print("Welcome to the Tip Calculator!")
+"""takes in the initial bill as a float value"""
 initialBill = float(input("What was the total bill? ₹"))
+"""takes in the tip amount as a float value"""
 tip = float(input("What percentage tip would you like to give? "))
+"""calculates the total bill"""
 totalBill = initialBill + (initialBill * (tip/100))
+"""stores the split number"""
 splitNumber = int(input("How many people to split the bill with? "))
+"""splits the bill"""
 splittedBill = totalBill / splitNumber
+"""prints the amount to be paid by each individual"""
 print(f"Each person should pay ₹{round(splittedBill, 2)}")
